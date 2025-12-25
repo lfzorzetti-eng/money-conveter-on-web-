@@ -2,12 +2,12 @@
 {
     public class CurrencyConverter
     {
-        private readonly double dollarRatetoBRL = 5.52;
-        private readonly double euroRatetoBRL = 6.47;
-        private readonly double brlRatetoDollar = 0.18;
-        private readonly double brlRatetoEuro = 0.15;
+        private readonly decimal dollarRatetoBRL = 5.52m;
+        private readonly decimal euroRatetoBRL = 6.47m;
+        private readonly decimal brlRatetoDollar = 0.18m;
+        private readonly decimal brlRatetoEuro = 0.15m;
 
-        public double Convert(double value, int coinOrigem, int coinDestino)
+        public decimal Convert(decimal value, int coinOrigem, int coinDestino)
         {
             if (coinOrigem == 1 && coinDestino == 2)
                 return value * dollarRatetoBRL;

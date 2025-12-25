@@ -7,7 +7,7 @@ namespace ConversorDeMoedas.Pages
     public class IndexModel : PageModel
     {
         [BindProperty]
-        public double Value { get; set; }
+        public decimal Value { get; set; }
 
         [BindProperty]
         public int CoinOrigem { get; set; }
@@ -15,7 +15,7 @@ namespace ConversorDeMoedas.Pages
         [BindProperty]
         public int CoinDestino { get; set; }
 
-        public double? Result { get; set; }
+        public decimal? Result { get; set; }
 
         public void OnPost()
         {
